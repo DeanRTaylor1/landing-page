@@ -12,7 +12,26 @@ body {
   a {
     /* this removes the line under our links */
     text-decoration: none;
-    color: white;
+    color: black;
+  }
+
+  a:hover {
+    opacity: 0.7;
+
+
+  }
+
+  .fa {
+    
+    font-size: 40px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
   }
 
   ul {
@@ -22,17 +41,28 @@ body {
     padding: 0;
     gap: 16px;
   }
-
+  
     .button1 {
-    background-color: #3882F6;
-    color: white;
+    background-color: white;
+    color: black;
+    border-color: black;
+    border-radius: 3px;
 
+
+    }
+
+    .button1:hover {
+        opacity: 0.7;
 
     }
 
 
     .button2 {
-        background-color: #3882F6;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
         border-color: white;
         color: white;
         box-shadow: 0px 0px 0px transparent;
@@ -44,7 +74,7 @@ body {
 
 
   .header {
-    background-color: #1F2937;
+    background-color: white;
     display: flex;
     flex-grow: 0.25;
     justify-content: space-between;
@@ -53,11 +83,18 @@ body {
     padding-left: 180px;
     padding-top: 16px; 
     padding-bottom: 48px   ;
-    color: white;
+    color: black;
     
     
     
     
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+
+
   }
 
   .hero {
@@ -73,11 +110,12 @@ body {
 
   .placeholder{
     display: flex;
-    background-color: gray;
+    background: transparent;
     justify-content: center;
     align-items: center;
     width: 50%;
     height: 100%;
+    align-self: center;
     
 
   }
@@ -111,8 +149,13 @@ body {
   }
 
   .footer {
-    background-color: #1F2937;
+    background-color: white;
     height: 72px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
 
 
 
@@ -133,7 +176,7 @@ body {
   }
 
   .action {
-    background-color: white;
+    background-color: white;    
     flex-grow: 0.3;
     display:flex;
     align-items: center;
@@ -141,6 +184,8 @@ body {
     gap: 48px;
     padding-right: 130px;
     padding-left: 130px;
+    padding-top: 24px;
+    padding-bottom: 12px;
     
 
    
@@ -151,17 +196,20 @@ body {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #3882F6;
+    background-color: white;
     flex-grow: 1;
     box-shadow: 2px 4px 16px rgba(0,0,0,.06);
     border-radius: 7px;
+    border-color: black;
+    border-width: thin;
+    border-style: solid;
     padding-top: 18px;
     padding-bottom: 18px;
     padding-left: 100px;
     padding-right: 100px;
     gap: 48px;
     width: 50%;
-    color: white;
+    color: black;
     font-size: smaller;
     
   }
@@ -188,7 +236,8 @@ body {
     flex-wrap: nowrap;
     justify-content: center;
     width: 100%;
-    gap: 16px;
+    gap: 160px;
+    padding-bottom: 12px;
     
     }
 
@@ -199,8 +248,6 @@ body {
     display:flex;
     flex-direction:column;
     align-items:center;
-    
-    overflow:hidden;
     font-size: 12px;
     
     }
@@ -209,14 +256,13 @@ body {
 
       .card {
 
-        border: 3px solid #3882f6;
+        border: 3px solid black;
         box-shadow: 2px 4px 16px rgba(0,0,0,.06);
-        border-radius: 7px;
-        
-        width: 80px;
-        height: 80px;
-        padding: 8px;
-        margin: 8px;
+        border-radius: 3px;        
+        width: 150px;
+        height: auto;
+        padding: 2px;
+        margin: 2px;
         color: black;
         
     
@@ -224,12 +270,14 @@ body {
   }
 
   .quote {
-    background-color: #E5E7EB;    
+    background-color: whitesmoke;    
     flex-grow: 0.3;      
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
     padding-right: 280px;
     padding-left: 280px;
     font-size: 24px;
