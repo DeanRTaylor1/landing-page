@@ -23,12 +23,24 @@ body {
     gap: 16px;
   }
 
-    button {
+    .button1 {
     background-color: #3882F6;
     color: white;
 
 
     }
+
+
+    .button2 {
+        background-color: #3882F6;
+        border-color: white;
+        color: white;
+        box-shadow: 0px 0px 0px transparent;
+        width: 150px;
+        height: 35px;
+    
+    
+        }
 
 
   .header {
@@ -120,10 +132,53 @@ body {
 
   }
 
+  .action {
+    background-color: white;
+    flex-grow: 0.3;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    padding-right: 130px;
+    padding-left: 130px;
+    
+
+   
+
+  }
+  .action>div {
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3882F6;
+    flex-grow: 1;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+    border-radius: 7px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 48px;
+    width: 50%;
+    color: white;
+    font-size: smaller;
+    
+  }
+  .action b {
+
+    font-size: medium;
+    
+
+
+  }
+  
+  
   .title2 {
     font-size: 36px;
-    font-weight: extra-bold;
+    font-weight: bold;
     color: #1F2937;
+    
 
 
   }
@@ -144,6 +199,7 @@ body {
     display:flex;
     flex-direction:column;
     align-items:center;
+    
     overflow:hidden;
     font-size: 12px;
     
